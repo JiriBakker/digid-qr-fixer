@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "DigiD QR Fixer",
-  "version": "1.3",
+  "version": "1.4",
 
   "description": "Removes DigiD logo from QR so it can be scanned more reliably",
 
@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://digid.nl/inloggen_app_qr?*"],
+      "matches": ["https://digid.nl/inloggen_app_qr?*", "https://login.digid.nl/inloggen_app_qr?*"],
       "js": ["digid-qr-fixer.js"]
     }
   ]
